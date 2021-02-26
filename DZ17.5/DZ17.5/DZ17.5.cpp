@@ -6,7 +6,9 @@
 class Vector
 {
 public:
-    Vector(): x(2), y(2), z(2)
+    Vector(): x(0), y(0), z(0)
+    {}
+    Vector(float _x, float _y, float _z): x(_x),y(_y),z(_z)
     {}
     void Show()
     {
@@ -25,7 +27,7 @@ private:
 
 int main()
 {
-    Vector v;
+    Vector v (10,4,3);
     v.Show();
     v.Mod();
 }
